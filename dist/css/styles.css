@@ -1,0 +1,93 @@
+body,
+html {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  background-color: #19a2ae;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  background-repeat: no-repeat;
+  background-image: url("/images/bg-pattern-top.svg"), url("/images/bg-pattern-bottom.svg");
+  background-position: right 42vw bottom 45vh, left 45vw top 42vh;
+}
+@media (min-width: 768px) {
+  .container {
+    background-position: right 52vw bottom 35vh, left 50vw top 50vh;
+  }
+}
+
+.card {
+  border-radius: 15px;
+  max-width: 600px;
+  overflow: hidden;
+  display: inline-block;
+  background-color: white;
+}
+.card-header {
+  display: flex;
+  min-height: 150px;
+}
+.card-header img {
+  object-fit: cover;
+  object-position: center;
+}
+.card-body .profile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4rem 1rem 1.5rem 1rem;
+}
+.card-body .profile-img {
+  border-radius: 100%;
+  border: 5px solid white;
+  position: absolute;
+  top: -3rem;
+}
+.card-body .profile-details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.card-body .profile-details .name {
+  font-weight: 700;
+}
+.card-body .profile-details .age {
+  color: #969696;
+}
+.card-body .profile-details .country {
+  color: #969696;
+  font-size: 0.8rem;
+  margin-top: 8px;
+}
+.card-footer {
+  border-top: 1px solid #ddd;
+  padding: 1.5rem 1rem;
+  display: flex;
+}
+.card-footer .social-count {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card-footer .social-count .count {
+  font-weight: 700;
+}
+.card-footer .social-count .label {
+  color: #969696;
+  font-size: 0.5rem;
+  margin-top: 8px;
+  letter-spacing: 2px;
+}
+
+/*# sourceMappingURL=styles.css.map */
